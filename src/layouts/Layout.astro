@@ -10,9 +10,20 @@ import { ClientRouter } from "astro:transitions";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 		<ClientRouter/>
 	</head>
-	<body class="bg-gradient-to-b from-zinc-950 to-cyan-950 text-white container mx-auto px-4 lg:px-16 bg-fixed">
+	<body class="
+		bg-gradient-to-b	from-zinc-950 
+		to-cyan-950			text-white 
+		container 			mx-auto 
+		px-4 				lg:px-16 
+		bg-fixed			josefin-sans-400
+		text-xl		
+		"
+	>
 		<main>
 			<slot />
 		</main>
@@ -25,5 +36,54 @@ import { ClientRouter } from "astro:transitions";
 		margin: 0;
 		width: 100%;
 		height: 100%;
+	}
+
+	.josefin-sans-100 {
+		font-family: "Josefin Sans", serif;
+		font-optical-sizing: auto;
+		font-weight: 100;
+		font-style: normal;
+	}
+
+	.josefin-sans-200 {
+		font-family: "Josefin Sans", serif;
+		font-optical-sizing: auto;
+		font-weight: 200;
+		font-style: normal;
+	}
+
+	.josefin-sans-300 {
+		font-family: "Josefin Sans", serif;
+		font-optical-sizing: auto;
+		font-weight: 300;
+		font-style: normal;
+	}
+
+	.josefin-sans-400 {
+		font-family: "Josefin Sans", serif;
+		font-optical-sizing: auto;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	.josefin-sans-500 {
+		font-family: "Josefin Sans", serif;
+		font-optical-sizing: auto;
+		font-weight: 500;
+		font-style: normal;
+	}
+
+	.josefin-sans-600 {
+		font-family: "Josefin Sans", serif;
+		font-optical-sizing: auto;
+		font-weight: 600;
+		font-style: normal;
+	}
+
+	.josefin-sans-700 {
+		font-family: "Josefin Sans", serif;
+		font-optical-sizing: auto;
+		font-weight: 700;
+		font-style: normal;
 	}
 </style>

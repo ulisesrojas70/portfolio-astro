@@ -3,6 +3,9 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
+			fontFamily: {
+				sans: ["Josefin Sans", "serif"]
+			},
 			keyframes: {
 				float: {
 					'0%, 100%': { transform: 'translateY(0)' },
